@@ -18,6 +18,10 @@ Méthodes:
 - Bosst()
   Classe Player(Hérite de la classe A)
   Atrributs:
+  -Score
+  Méthodes:
+  -Interface()
+  
   
   
 
