@@ -63,6 +63,85 @@ scores	    public setScores(),public getScores()
 playerNames	public setPlayerNames(),public getPlayerNames()
   
   
-  
+  //Squelette de code
+class Vehicule {
+    public float vitesse;
+    public Vector3 position;
+    public float direction;
+    public void Accélération(float increment) {
+        vitesse += increment;
+    }
+    public void Ralentissement(float decrement) {
+        vitesse -= decrement;
+    }
+    public void Tourner(float angle) {
+        direction += angle;
+    }
+    public void Boost() {}
+class Player : Vehicule {
+    public int score;
+    public void Interface() {}
+    class IA : Vehicule {}
+    public int niveauDifficulté;
+
+    public void RoadCalculation() {}
+    public void ÉviterObstacles() {}
+    abstract class ObjetSpécial {
+    public float durée;
+    public string type;
+
+    public abstract void AppliquerEffet(Vehicule véhicule);
+}
+class MissileGuide : ObjetSpécial {}
+    public Vehicule cible;
+    public override void AppliquerEffet(Vehicule véhicule) {
+     // L'effet du missile
+    }
+    class TacheHuile : ObjetSpécial {
+    public override void AppliquerEffet(Vehicule véhicule) {
+        // Logique pour ralentir le véhicule
+    }
+    class Circuit {
+    public List<Vehicule> listeVehicules; // Max 10 véhicules
+    public Scoreboard scoreboard;
+    public List<Obstacle> obstacles;
+
+    public Circuit() {
+        listeVehicules = new List<Vehicule>();
+        scoreboard = new Scoreboard();
+        obstacles = new List<Obstacle>();
+    }
+
+    public void AjouterVehicule(Vehicule véhicule) {
+        if (listeVehicules.Count < 10) {
+            listeVehicules.Add(véhicule);
+        }
+    }
+
+    public void SupprimerVehicule(Vehicule véhicule) {
+        listeVehicules.Remove(véhicule);
+    }
+
+    public void MettreAJourScore() {
+    }
+    class LeaderboardManager {
+    public List<int> scores;
+    public List<string> playerNames;
+
+    public void SetScores(List<int> newScores) {
+        scores = newScores;
+    }
+
+    public List<int> GetScores() {
+        return scores;
+    }
+
+    public void SetPlayerNames(List<string> newPlayerNames) {
+        playerNames = newPlayerNames;
+    }
+
+    public List<string> GetPlayerNames() {
+        return playerNames;
+    }
 
 
