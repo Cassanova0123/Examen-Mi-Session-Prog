@@ -138,6 +138,11 @@ class MissileGuide : ObjetSpécial {}
 
     public void SetPlayerNames(List<string> newPlayerNames) {
         playerNames = newPlayerNames;
+    L'utilisation du patron de conception Singleton pour ce jeu:
+L'utilisation de Singleton pourrait servir comme de GameManager pour qu'il n'ait qu'une seule intense dans le code
+  
+L'utilisation de l'algoritme Minimax est bien ici parce que comme nous sommes dans un jeu de course MiniMax passe en revue toutes les 
+possibilités pour un nombre limité d'essais et minimise la perte maximum.Le jeu de courses consomment beaucoup en ressource je trouve qu'évaluer les pertes est un bonne chose pour un projet de type Turbo Rival
     }
 
     public List<string> GetPlayerNames() {
