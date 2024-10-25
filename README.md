@@ -21,6 +21,24 @@ Méthodes:
   -Score
   Méthodes:
   -Interface()
+  IA(Hérite de la classe A)
+  Attributs:
+  - Niveau de difficulté
+  Méthodes:
+  - RoadCalcuation()
+  - Éviter les obstcales()
+    Classe Objet
+    Attributs:
+  - Durée
+  - Type
+Méthodes:
+  - AppliquerEffet(véhicule)
+MissileGuide (Hérite de ObjetSpécial)
+Attributs :
+Cible
+Méthodes :
+AppliquerEffet(véhicule)
+
   
   
   
