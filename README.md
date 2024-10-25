@@ -38,7 +38,24 @@ Attributs :
 Cible
 Méthodes :
 AppliquerEffet(véhicule)
+TacheHuile (Hérite de ObjetSpécial)
 
+Méthodes :
+AppliquerEffet(véhicule)
+EMP (Hérite de ObjetSpécial)
+
+Méthodes :
+AppliquerEffet(véhicule)
+Circuit
+
+Attributs :
+ListeVéhicules (max 10)
+Scoreboard
+Obstacles
+Méthodes :
+AjouterVéhicule(véhicule)
+SupprimerVéhicule(véhicule)
+MettreAJourScore()
   
   
   
