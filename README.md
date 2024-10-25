@@ -6,6 +6,19 @@ Ce répositoire contient la hiérarchie de classe et le code pour le projet Turb
 
 Hiérachie de classe:
 
-Véhicule:
+Véhicule(Classe A):
+Attributs:
+- Vitesse
+- Position
+- Direction
+Méthodes:
+- Accélération()
+- Ralentissement()
+- Tounrer()
+- Bosst()
+  Classe Player(Hérite de la classe A)
+  Atrributs:
+  
+  
 
 
