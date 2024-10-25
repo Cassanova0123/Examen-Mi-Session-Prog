@@ -56,6 +56,11 @@ Méthodes :
 AjouterVéhicule(véhicule)
 SupprimerVéhicule(véhicule)
 MettreAJourScore()
+
+Classe LeaderboardManager (Unity Cloud Leaderboard)
+Attribut	   Fonctions
+scores	    public setScores(),public getScores()
+playerNames	public setPlayerNames(),public getPlayerNames()
   
   
   
